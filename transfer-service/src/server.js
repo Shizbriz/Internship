@@ -5,13 +5,11 @@ const express = require('express'); // requre the express framework
 const app = express();
 const fs = require('fs'); //require file system object
 
-
 // Endpoint to Get a list of users
 app.get('/getUsers', function(req, res){
     fs.readFile(__dirname + "/" + "database.json", 'utf8', function(err, data){
         console.log(data);
         res.end(data); // you can also use res.send()
-       
     });
 })
 
@@ -22,4 +20,3 @@ var server = app.listen(8080, function(){
     var port = server.address().port
     console.log("REST API demo app listening at http://%s:%s", host, port)
 })
-

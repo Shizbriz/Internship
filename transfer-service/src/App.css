@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+body{
+  background-color: azure;
 }
+a{
+  color: rgb(0, 0, 0, 0.8);
+font-size: 20px;
+font-family: -apple-system, BlinkMacSystemFont, 
+      'Droid Sans', 'Helvetica Neue';
+    }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  background-color: rgb(172, 230, 65);
+  padding: 1px 0;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.left, .right{
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#search, #search:active{
+  border: none;
+  background-color: transparent;
+  width: 50vw;
+}
+
+.searchbar .btn{
+  background-color: rgb(250, 235, 215, 0.6);
+  font-size: 10px;
+  padding: 3px 6px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.searchbar{
+  border: 1px solid black;
+  background-color: rgb(250, 235, 215, 0.4);
+  font-size: 12px;
+  padding: 0 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.form{
+  margin: 0 50px ;
+  width: 250px;
+}
+
+.account input{
+  float: right;
+  margin: 0 0 10px 30px;
+}
+
+.form .btn{
+  margin-top: 20px;
+  float: right;
+  background-color: rgb(203, 243, 93);
+  box-shadow: 2px 2px 4px black;
+  border-radius: 10px;
 }

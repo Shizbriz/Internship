@@ -1,5 +1,5 @@
 {
-  "accounts": {
+  "accounts":{
     "Account1": {
       "id":1,
       "accountNumber": "1234567890",
@@ -23,11 +23,6 @@
       "accountNumber": "0987612345",
       "accountBalance": 890000
     }
-  },
-  "transactions":{
-
-  },
-  "balances":{
-    
-  }
+  
+}
 }
